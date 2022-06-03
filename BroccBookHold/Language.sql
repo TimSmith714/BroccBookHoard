@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[Language]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
+    [Language] NVARCHAR(50) NOT NULL
+)

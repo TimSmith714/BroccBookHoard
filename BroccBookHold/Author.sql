@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[Author]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
+    [Name] NVARCHAR(50) NOT NULL, 
+    [DateOfBirth] DATE NULL, 
+    [Title] NVARCHAR(50) NULL, 
+    [Bio] NVARCHAR(MAX) NULL, 
+    [LastModified] DATETIME NOT NULL
+)

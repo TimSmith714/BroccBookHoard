@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[BookSubject]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
+    [BookId] UNIQUEIDENTIFIER NOT NULL, 
+    [SubjectId] UNIQUEIDENTIFIER NOT NULL, 
+    CONSTRAINT [FK_BookSubject_ToBook] FOREIGN KEY ([BookId]) REFERENCES [Book]([Id]), 
+    CONSTRAINT [FK_BookSubject_ToSubject] FOREIGN KEY ([SubjectId]) REFERENCES [Subject]([Id])
+)
